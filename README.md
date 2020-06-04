@@ -3,7 +3,18 @@
 Scripts for testing the Raspberry-Pi
 
 
-# Note
+# Commands
+
+* To check UART pin:
+
+```bash
+dtoverlay -h uart0
+
+raspi-gpio get
+```
+
+
+# Note on Setup
 
 * Disable the Agetty that captures /dev/serial0 via command:
 
