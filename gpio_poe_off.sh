@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source gpio_poe_pin.sh
+source gpio_pins.sh
 
 [[ ! -d /sys/class/gpio/gpio${poe_pin} ]] && echo "${poe_pin}" > /sys/class/gpio/export
 echo "out" > /sys/class/gpio/gpio${poe_pin}/direction
